@@ -1,0 +1,140 @@
+/* Paleta base:
+   Fondo: #f5f7fa
+   Acento primario: #0077ff
+   Acento secundario: #00c4b4
+   Texto principal: #333
+   Bordes suaves: #ddd
+*/
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background: linear-gradient(135deg, #f5f7fa, #e6ebef);
+}
+
+/* Título principal */
+h2 {
+    text-align: center;
+    margin: 0 0 20px 0;
+    color: #0077ff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+/* Contenedor del formulario */
+form {
+    background: #fff;
+    padding: 30px 25px;
+    max-width: 500px;
+    margin: 60px auto;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+form:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* Inputs y selects */
+input,
+textarea,
+select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #f9fafc;
+    color: #333;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #0077ff;
+    box-shadow: 0 0 5px rgba(0, 119, 255, 0.3);
+    background-color: #fff;
+}
+
+/* Etiquetas */
+label {
+    display: block;
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 6px;
+    margin-top: 12px;
+}
+
+/* Fieldsets */
+fieldset {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    padding: 15px 20px;
+    margin: 15px 0;
+    background-color: #fafbfc;
+}
+
+legend {
+    padding: 0 8px;
+    color: #00c4b4;
+    font-weight: 600;
+}
+
+/* Checkbox */
+.checkbox {
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+/* Enlaces */
+a {
+    color: #0077ff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #e0e6e5;
+}
+
+/* Contenedor del formulario */
+.contenedor {
+    text-align: center;
+}
+
+/* Botón  */
+button, input[type="submit"] {
+    background-color: #0077ff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #00c4b4;
+    transform: translateY(-2px);
+}
+
+legend {
+    color: #0077ff;
+    font-weight: 600;
+}
+
+
+

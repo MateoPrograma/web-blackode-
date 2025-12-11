@@ -9,18 +9,23 @@
     
 </head>
 <body>
-    <form>
+    <form action="categorias.php" method="POST" id="form_categorias">
         <h2>
-            Formulario de alta de  Categorias
+            Formulario de alta de Categorias
         </h2>
     <fieldset>
         <legend>INFORMACIÓN BASICA</legend>
-         <div class="form_input">
-            <label>Alta de Categorias
-            <input type="text" placeholder="Escribir..." id="email">
-            </label>
-        </div>
-        
+           <div class="form_input">
+               <label>Nombre
+               <input type="text" placeholder="Escribir..." id="Nombre" name="nombre">
+               </label>
+           </div>
+           <div class="form_input">
+               <label>Id
+               <input type="text" placeholder="Escribir..." id="id" name="id_categoria">
+               </label>
+           </div>
+           
     </fieldset>
     <div class="contenedor">
  
@@ -30,13 +35,10 @@
     </div>
     
     
-
-    
     </form>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="../..//assets/js/validaciones.js"></script>
-    
-
+    <script src="../../assets/js/validaciones.js"></script>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3067/3067287.png" type="image/png">
     
     
 </body>

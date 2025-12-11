@@ -3,35 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulario de Productos</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form>
+    <form action="productos.php" method="POST" id="form_productos" enctype="multipart/form-data">
         <h2>
             Formulario de alta Productos
         </h2>
     <fieldset>
         <legend>INFORMACIÓN BASICA</legend>
+        
         <div class="form_input">
             <label>Id
-            <input type="text" placeholder="12345" id="nombre">
+            <input type="text" placeholder="12345" name="id_producto" id="id_producto">
             </label>
-            
         </div>
+        
         <div class="form_input">
             <label>Producto
-            <input type="email" placeholder="Dato" id="email">
+            <input type="text" placeholder="Nombre" name="nombre_producto" id="nombre_producto">
             </label>
         </div>
-         <div class="form_input">
+        
+        <div class="form_input">
+            <label>Imagen
+            <input type="file" placeholder="Selecciona una imagen" name="imagen_producto" id="imagenProducto" accept="image/*">
+            </label>
+        </div>
+        
+        <div class="form_input">
+            <label>Precio
+            <input type="number" step="0.01" placeholder="$" name="precio" id="precio">
+            </label>
+        </div>
+        
+        <div class="form_input">
             <label>Descripción
-            <input type="text" placeholder="El asunto de tu mensaje" id="email">
+            <input type="text" placeholder="Descripción del producto" name="descripcion" id="descripcion">
             </label>
         </div>
-         <div class="form_input">
+        
+        <div class="form_input">
             <label>Categorias
-            <input type="text" placeholder="El asunto de tu mensaje" id="email">
+            <input type="text" placeholder="ID de la categoría" name="categoria_id" id="categoria_id">
             </label>
         </div>
         
@@ -42,7 +57,7 @@
     <button type="button">Cancelar</button>
 
     </div>
-       
+        
     </form>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="../../assets/js/validaciones.js"></script>
